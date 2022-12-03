@@ -1,0 +1,20 @@
+一些实用的git命令
+1.git三剑客：
+git status ===> 检查当前是否有修改，以及当前branch 是否以几个commit领先或者几个commit落后 main branch。
+git add <filename/filepath>  ====> 添加当前已修改的文件。（一般使用该命令之后还需要再次运行一边git status 去查看是否还有遗落）全部添加命令=====> git add .
+git commit -m"<message for your git>"=========> 提交当前已添加（修改）的文件。
+
+***************当你不添加不提交文件时，如果直接切换分支则当前分支所有的内容会一并出现在你已切换的分支。***************************
+
+
+git push /git push origin <branchName> ======> 推送至当前远程库
+git pull /git pull origin <branchName> ======> 拉取（更新）从远程到当前的本地库的内容
+
+git branch =====> 查看本地库的分支
+git branch -r =====>查看远程库的分支
+git branch -a ======> 查看所有库的分支
+git fetch  -a ======> 提取远程库的分支
+
+git remote -v ======> 提供远程库提取分支和推送的信息
+
+git branch <branchName> + git checkout <branchName> =git checkout -b <branchName>
