@@ -2,6 +2,8 @@ package OOP;
 
 public class OOP_Practice {
     String name="CSGO";
+    int age=20;
+    // 这是为了看远程库的互动加上的
     public void printHello(){
         System.out.println("Hello\t"+name);
     }
